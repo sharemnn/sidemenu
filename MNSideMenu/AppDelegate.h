@@ -7,11 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MNSideMenuViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property (retain,nonatomic)MNSideMenuViewController *menuViewController;
 
 @end
 

@@ -15,6 +15,11 @@
 		9973BA421C2B80CD00B6E847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9973BA401C2B80CD00B6E847 /* LaunchScreen.storyboard */; };
 		9973BA4D1C2B80CD00B6E847 /* MNSideMenuTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9973BA4C1C2B80CD00B6E847 /* MNSideMenuTests.m */; };
 		9973BA581C2B80CD00B6E847 /* MNSideMenuUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9973BA571C2B80CD00B6E847 /* MNSideMenuUITests.m */; };
+		9973BA681C2B84A100B6E847 /* MNSideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9973BA671C2B84A100B6E847 /* MNSideMenuViewController.m */; };
+		9973BA6B1C2B85A700B6E847 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9973BA6A1C2B85A700B6E847 /* LeftViewController.m */; };
+		9973BA6E1C2B85B000B6E847 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9973BA6D1C2B85B000B6E847 /* RightViewController.m */; };
+		9973BA741C2BC5D000B6E847 /* home_bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9973BA721C2BC5D000B6E847 /* home_bg.jpg */; };
+		9973BA751C2BC5D000B6E847 /* nav_menu_icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9973BA731C2BC5D000B6E847 /* nav_menu_icon@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +44,7 @@
 		9973BA331C2B80CD00B6E847 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9973BA351C2B80CD00B6E847 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9973BA361C2B80CD00B6E847 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9973BA381C2B80CD00B6E847 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9973BA381C2B80CD00B6E847 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; wrapsLines = 0; };
 		9973BA391C2B80CD00B6E847 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		9973BA3C1C2B80CD00B6E847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9973BA3E1C2B80CD00B6E847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,14 @@
 		9973BA531C2B80CD00B6E847 /* MNSideMenuUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MNSideMenuUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9973BA571C2B80CD00B6E847 /* MNSideMenuUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MNSideMenuUITests.m; sourceTree = "<group>"; };
 		9973BA591C2B80CD00B6E847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9973BA661C2B84A100B6E847 /* MNSideMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MNSideMenuViewController.h; sourceTree = "<group>"; };
+		9973BA671C2B84A100B6E847 /* MNSideMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MNSideMenuViewController.m; sourceTree = "<group>"; };
+		9973BA691C2B85A700B6E847 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		9973BA6A1C2B85A700B6E847 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		9973BA6C1C2B85B000B6E847 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		9973BA6D1C2B85B000B6E847 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+		9973BA721C2BC5D000B6E847 /* home_bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = home_bg.jpg; sourceTree = "<group>"; };
+		9973BA731C2BC5D000B6E847 /* nav_menu_icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nav_menu_icon@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +114,20 @@
 		9973BA311C2B80CD00B6E847 /* MNSideMenu */ = {
 			isa = PBXGroup;
 			children = (
+				9973BA651C2B843900B6E847 /* MNSideMenuDemo */,
 				9973BA351C2B80CD00B6E847 /* AppDelegate.h */,
 				9973BA361C2B80CD00B6E847 /* AppDelegate.m */,
 				9973BA381C2B80CD00B6E847 /* ViewController.h */,
 				9973BA391C2B80CD00B6E847 /* ViewController.m */,
+				9973BA691C2B85A700B6E847 /* LeftViewController.h */,
+				9973BA6A1C2B85A700B6E847 /* LeftViewController.m */,
+				9973BA6C1C2B85B000B6E847 /* RightViewController.h */,
+				9973BA6D1C2B85B000B6E847 /* RightViewController.m */,
 				9973BA3B1C2B80CD00B6E847 /* Main.storyboard */,
 				9973BA3E1C2B80CD00B6E847 /* Assets.xcassets */,
 				9973BA401C2B80CD00B6E847 /* LaunchScreen.storyboard */,
 				9973BA431C2B80CD00B6E847 /* Info.plist */,
+				9973BA711C2BC5D000B6E847 /* images */,
 				9973BA321C2B80CD00B6E847 /* Supporting Files */,
 			);
 			path = MNSideMenu;
@@ -138,6 +157,25 @@
 				9973BA591C2B80CD00B6E847 /* Info.plist */,
 			);
 			path = MNSideMenuUITests;
+			sourceTree = "<group>";
+		};
+		9973BA651C2B843900B6E847 /* MNSideMenuDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9973BA661C2B84A100B6E847 /* MNSideMenuViewController.h */,
+				9973BA671C2B84A100B6E847 /* MNSideMenuViewController.m */,
+			);
+			path = MNSideMenuDemo;
+			sourceTree = "<group>";
+		};
+		9973BA711C2BC5D000B6E847 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9973BA721C2BC5D000B6E847 /* home_bg.jpg */,
+				9973BA731C2BC5D000B6E847 /* nav_menu_icon@2x.png */,
+			);
+			name = images;
+			path = ../images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,9 +281,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9973BA751C2BC5D000B6E847 /* nav_menu_icon@2x.png in Resources */,
 				9973BA421C2B80CD00B6E847 /* LaunchScreen.storyboard in Resources */,
 				9973BA3F1C2B80CD00B6E847 /* Assets.xcassets in Resources */,
 				9973BA3D1C2B80CD00B6E847 /* Main.storyboard in Resources */,
+				9973BA741C2BC5D000B6E847 /* home_bg.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,8 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9973BA3A1C2B80CD00B6E847 /* ViewController.m in Sources */,
+				9973BA6B1C2B85A700B6E847 /* LeftViewController.m in Sources */,
+				9973BA681C2B84A100B6E847 /* MNSideMenuViewController.m in Sources */,
 				9973BA371C2B80CD00B6E847 /* AppDelegate.m in Sources */,
 				9973BA341C2B80CD00B6E847 /* main.m in Sources */,
+				9973BA6E1C2B85B000B6E847 /* RightViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,6 +541,7 @@
 				9973BA5E1C2B80CD00B6E847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9973BA5F1C2B80CD00B6E847 /* Build configuration list for PBXNativeTarget "MNSideMenuTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +550,7 @@
 				9973BA611C2B80CD00B6E847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9973BA621C2B80CD00B6E847 /* Build configuration list for PBXNativeTarget "MNSideMenuUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +559,7 @@
 				9973BA641C2B80CD00B6E847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

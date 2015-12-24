@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
+#import "LeftViewController.h"
+#import "RightViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -16,8 +20,29 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    ViewController *controller = [[ViewController alloc]init];
+    
+    UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:controller];
+    _menuViewController = [[MNSideMenuViewController alloc]initWithRootViewController:nav];
+    
+    
+    _menuViewController.leftDistance = 240;//设置滑动距离
+    _menuViewController.scaleSize = 0.85;//设置缩小比例
+    _menuViewController.animationType = AnimationTransition;//设置动画类型
+    _menuViewController.canSlideInPush = NO;
+    
+    LeftViewController *leftController = [[LeftViewController alloc] init];
+    RightViewController *rightController = [[RightViewController alloc]init];
+    
+    _menuViewController.rightViewController = rightController;
+    _menuViewController.leftViewController = leftController;
+    
+    self.window.rootViewController = _menuViewController;
+    [self.window makeKeyAndVisible];
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
